@@ -10,9 +10,13 @@
 }
 
 .icon-menu {
-  /* TODO: Add styles for the icon-menu class (whether it be the
+  /* TODO DONE: Add styles for the icon-menu class (whether it be the
       hamburger font icon or an image of your choosing). It should be
       bigger, and off to the right. */
+      float: right;
+      font-size: 50px;
+      line-height: -6;
+      /*DONE*/
 }
 
 .main-nav {
@@ -65,4 +69,17 @@
          - Display our unordered list (aka our nav links).
          - The main-nav should be all on one row, with padding spaced better
            for a larger screen.
-*/
+DONE */
+
+@media only screen and (min-width: 835px) {
+    .main-nav ul {
+    display: block;
+    }
+    .icon-menu {
+      display: none;
+    }
+    .main-nav ul li {
+      display: inline-block;
+      padding: 0px 50px 0px 50px;
+    }
+}
